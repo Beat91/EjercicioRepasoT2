@@ -65,6 +65,10 @@ public class Biblioteca {
 
     // TODO: Documentar este método
 
+    /**
+     * Devuelve la lista de libros de la biblioteca
+     * @return
+     */
     public List<Libro> getLibros() {
         return libros;
     }
@@ -94,6 +98,7 @@ public class Biblioteca {
      * @param autor
      * @return
      */
+    @Deprecated
     public Libro encuentaLibroPorAutor(String autor) {
         for (Libro libro : libros) {
             if (libro.getAutor().equals(autor)) {
